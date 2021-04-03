@@ -1,0 +1,223 @@
+
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family:'DotGothic16',sans-serif;  
+}
+.te
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   width: 100vh;
+   background:linear-gradient(45deg,#222831,#393e46,#00adb5);
+background-size: 200%,200%;
+animation:colos 15s ease infinite ;
+}
+.vamos
+{
+    background: rgba(22, 12, 12, 0.1);
+    width: 500px;
+    height: 500px;
+    top: 5%;
+    left: 30%;
+    position: absolute;
+}
+.ca
+{
+    background:linear-gradient(45deg,#560764,#913175,#dd5b82,#fe9797);
+    animation:colos 15s ease infinite ;
+    position: absolute;
+    color: #fff;
+    border-radius: 1%;
+    width: 80%;
+    top: 90px;
+    left: 0%;
+    background-size: 300%,300%;
+}
+.vamos button
+{ 
+    text-align: center;
+    background-color:rgba(17, 239, 255, 0.705);
+    width: 70px;
+    height: 30px;
+    border-radius: 0%;
+    transition-property:background-color;
+    transition-property:border-radius;
+    transition-duration: 0.7s;
+}
+.vamos button:hover
+{
+    background: #17e005;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.morgana
+{
+    background:linear-gradient(120deg,#e23e57, #88304e,#522546, #311d3f);
+    position:absolute;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    top: 50px;
+    left: 80%;
+   animation-name:colos;
+   animation-duration:5s;
+   animation-iteration-count:infinite;
+   background-size: 200%,200%;
+}
+.a
+{
+  background-color: #eeea0a;
+ position: fixed;
+  height:50px;
+  width:50px; 
+  top:0%;
+  left: 0%;
+  animation-name:qa;
+  animation-duration:10s;/*indica aduração*/
+animation-iteration-count:infinite;
+
+}
+.b
+{
+    background-color: #03093d;
+    position: fixed;
+    height: 50px;
+    width: 50px; 
+    top:25%;
+    left: 25%;
+    animation-name:qa;
+    animation-duration: 20s;/*indica aduração*/
+  animation-iteration-count: infinite;
+}
+.c
+{
+    background-color: #17e005;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    top:50%;
+    left:20%;  
+    animation-name:qa;
+    animation-duration: 15s;/*indica aduração*/
+  animation-iteration-count: infinite;
+
+}
+.d
+{
+    background-color: #a30303;
+    position: fixed;
+    height: 50px;
+    width: 50px; 
+    top:90%;
+    left: 90%;
+}
+.e
+{
+    background-color: #630000;
+    position: fixed;
+    height: 50px;
+    width: 50px; 
+    top:35%;
+    left: 35%;
+}
+.f
+{
+    position:relative;
+    background-color: #f1d9f5;
+    height: 50px;
+    width: 50px;
+    top:85%;
+    left:5%;
+    animation-name:qa;
+    animation-duration: 5s;/*indica aduração*/
+  animation-iteration-count: infinite; 
+}
+.g
+{
+    background-color: #020202;
+    position: fixed;
+    height: 50px;
+    width: 50px; 
+    top:38%;
+    left: 15%;
+    animation-name:qa;
+    animation-duration: 15s;/*indica aduração*/
+  animation-iteration-count: infinite;
+}
+@keyframes qa{
+   0%{transform:translatey(-500px) ;
+
+   }25%{
+
+   } 50%{
+    transform:translatey(640px) ;
+
+   }100%{
+    transform:translatey(-500px) ;
+   }
+}
+@keyframes cotos{ /*animasão*/
+    0%{
+        background-position: 0% 0%;
+
+    }
+    50%{
+        background-position: 50% 50%;
+
+    }
+    100%{
+        background-position: 100% 100%;
+
+    }
+}
+@keyframes colos{ /*animasão*/
+    0%{
+        background-position: 0% 50%;
+
+    }
+    50%{
+        background-position: 100% 50%;
+
+    }
+    100%{
+        background-position: 0% 100%;
+
+    }
+}
+@media (max-width:1000px)
+{
+    .vamos{
+        
+        top: 10%;
+        left: 1%;
+        width: 90%;
+    height: 80%;
+    }
+    .vamos img
+{
+    position: absolute;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    top: 50px;
+    left: 75%;
+}
+.ca
+{
+    background:linear-gradient(45deg,#560764,#913175,#dd5b82,#fe9797);
+    position: absolute;
+    color: #fff;
+ 
+    width: 60%;
+    top: 95px;
+    left: 15%;
+    background-size: 300%,300%;
+    animation:colos 15s ease infinite ;
+}
+}
