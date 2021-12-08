@@ -3,7 +3,7 @@ function resposta(){
     var t =String(la.value)
 /*cumprimento*/   
 if(t=== 'oi' || t=== 'Oi' || t=== 'ola' || t=== 'Ola' ){
-ca.innerHTML=`ola o que esta sentido meu anjo`
+ca.innerHTML=`oi ;)`
 
 }else if(t==='Tudo bem?' ||t==='tudo bem?' || t==='tudo bem' ||t==='ta tudo bem' || t==='Ta tudo bem' || t==="tudo bem com você ?" || t==="tudo bem ?"){
     ca.innerHTML=`sim,estou muito bem obrigado por perguntar :)`
@@ -22,10 +22,10 @@ else if(t ==='quem te crio?' || t ==='quem te crio ?' || t ==='Quem te crio?' ||
 ca.innerHTML='meu criador e um programador junior chamado Caio Rodrigues De Sousa, que ca pra nois ele e um otaku fedidio'
 }
 
-else if(t ==='O que e você ?' || t ==='o que e você' || t ==='O que e você' ){
-ca.innerHTML='Sou um programa criado pela 42X, minha função a princípio e servir como uma assistente para responder perguntas rápidas e ajudar estudantes e professores'
+else if(t ==='O que e você ?' || t ==='o que e você' || t ==='O que e você' || t==='quem e você ?' || t==='quem e você'){
+ca.innerHTML='Sou um programa criado por caio Rodrigues, minha função a princípio e servir como uma assistente para responder perguntas rápidas e ajudar estudantes e professores'
 }
-else if(t === 'Qual é o seu nome' || t === 'qual e o seu nome ?' || t === 'Qual e o seu nome?'){
+else if(t === 'Qual é o seu nome' ||t === 'qual o seu nome'|| t === 'qual e o seu nome ?' || t === 'Qual e o seu nome?'){
 ca.innerHTML='prazer me chamo morgana'
 }else if(t === 'te amo'){
 ca.innerHTML='TAMBEM TE AMO SEU GOSTOSO!!'
@@ -33,7 +33,7 @@ ca.innerHTML='TAMBEM TE AMO SEU GOSTOSO!!'
 
 
 
-else if(t==='qual e o seu sexo ?' || t==='Qual e o seu sexo?' || t==='Qual e o seu sexo ?' || t==='você tem sexo ?' || t==='você tem sexo'  || t==='Você tem sexo ?' || t==='Você tem sexo' ){
+else if(t==='qual e o seu sexo ?' || t==='qual o seu sexo' || t==='Qual e o seu sexo?' || t==='Qual e o seu sexo ?' || t==='você tem sexo ?' || t==='você tem sexo'  || t==='Você tem sexo ?' || t==='Você tem sexo' ){
 ca.innerHTML='Bom em teoria eu não tenho sexo mas como meu criador e um pervertido ele me crio como uma mulher'
 }
 
@@ -180,186 +180,137 @@ background: rgba(255,255, 255, 0.05);
 else if(t ==='relogio'){
 ca.innerHTML=`
 <style type="text/css">
+font-size: 50px;
+}
+.caio
+{
     
-    .relogio
-{
-background: #111;
-width: 50%;
-position: relative;
-}
-@keyframes animate
-{
-0%,100%
-{
-    transform: translateY(10px);
-}
-50%
-{
-
-transform:translateY(-10px);
-}
+    position: relative;
+    margin-top:5ch;
+    font-size: 25px;
 
 }
-.container{
-position: relative;
-width:50% ;
-top: 25%;
-left: 15%;
+.tee{
+    position: relative;
+    top:8ch;
+}
+.anbiente{
+    color: #fff;
+    text-align: center;
+    top: 5ch;
+    left: 20ch;
+    object-position: center;
+    position: relative;
+    height: 15ch;
+    width: 15ch;
+    border-radius: 50%;
+   
+    background-size: cover;
+    border: solid 1px;
+}
+.t
+{
+    position: relative;
+top: 6ch;
+}
+@media(max-width:1000px)
+{
+    .anbiente
+    {
+        top: 5ch;
+        left: 0.5ch;
 
-}
-.container::before
-{
-content:'' ;
-position: absolute;
-bottom:-150px;
-width: 100%;
-height: 60px;
-border-radius: 50%;
-}
-.box
-{
-position: relative;
-z-index: 1;
-width:400px;
-height:400px;
-backdrop-filter: blur(25px);
-border-radius: 200px;
-border: 1px solid rgba(255,255, 255, 0.5);
-animation: animate 5s ease-in-out infinite;
-animation-delay: -2.5s;
 
-}
-.clock
-{
-position:absolute;
-top:10px;
-left: 10px;
-right: 10px;
-bottom: 10px;
-display: flex;
-justify-content: center;
-align-items: center;
-background: radial-gradient(transparent,rgba(255,255,255,0.2));
-background-size: cover;
-border-radius: 50%;
-backdrop-filter: blur(25px);
-border:1px solid rgba(255,255,255,0.5);
-border-bottom: none;
-border-right: none;
-box-shadow: -10px -10px 20px rgba(255,255,255,0.1),
-10px 10px 20px rgba(0,0,0,0.1),
-0px 40px 50px rgba(0,0,0,0.1),;
+    }
 
-}
-.clock::before
-{
-content: '';
-position:absolute ;
-width: 15px;
-height: 15px;
-background: #fff;
-border-radius: 50%;
-z-index: 1000;
-}
-.hour,
-.min,
-.sec
-{
-position:absolute;
-}
-.hour,.hr
-{
-width: 160px;
-height: 160px;
-}
-.min, .mn
-{
-width: 190px;
-height: 190px;
-}
-.sec, .sc
-{
-width: 230px;
-height: 230px;
-}
-.hr,.mn,.sc
-{
-display: flex;
-justify-content: center;
-position:absolute;
-border-radius: 50%;
-}
-.hr::before
-{
-content: '';
-position:absolute;
-width: 8px;
-height: 80px;
-background: #ff105e;
-z-index: 11;
-border-radius: 6px;
 
-}
-.mn::before
-{
-content: '';
-position:absolute;
-width: 4px;
-height: 90px;
-background: #fff;
-z-index: 12;
-border-radius: 6px;
-
-}
-.sc::before
-{
-content: '';
-position:absolute;
-width: 2px;
-height: 150px;
-background: #fff;
-z-index: 12;
-border-radius: 6px;
 
 }
 </style>
 
-<div class="relogio" id="relogio">
-<div class="container">
-    <div class="box">
-        <div class="clock"><img src="https://github.com/caio-glind/projeto_nada_ave/blob/main/projeto%20relogio/clock.png?raw=true" >
-            <div class="hour">
-                <div class="hr" id="hr"></div>
-            </div>
-            <div class="min">
-                <div class="mn" id="mn"></div>
-            </div>
-            <div class="sec">
-                <div class="sc" id="sc"></div>
-            </div>
-        </div>
-    </div>
-</div>
-</div> 
+<div id="anbiente" class="anbiente">
+        <div  id="tee" class="tee"></div> 
+        <div class="caio" id="caio"></div> 
+       </div>
 `
 
-const deg=6;
-const hr=document.querySelector('#hr');
-const mn=document.querySelector('#mn');
-const sc=document.querySelector('#sc');
 
-setInterval(()=>{
- let day=new Date();
-let hh=day.getHours() * 30;
-let mm=day.getMinutes()* deg;
-let ss=day.getSeconds()* deg;
+let data = new Date();
+    let hora = data.getHours();
+    let minutos=data.getMinutes();
+    let sigundos = data.getSeconds();
+    let total=hora+":"+minutos+":"+sigundos;
 
-hr.style.transform=`rotateZ(${hh+(mm/12)}deg)`;
-mn.style.transform=`rotateZ(${(mm)}deg)`;
-sc.style.transform=`rotateZ(${(ss)}deg)`;
+   function relogioo(){
+    let data = new Date();
+    let horas = data.getHours();
+    let minutos=data.getMinutes();
+    let sigundos = data.getSeconds();
 
-})
+    if(horas<10){
+         horas="0"+horas;
+     }
+     if(minutos<10){
+         minutos="0"+minutos;
 
+     }
+     if(sigundos<10){
+         sigundos="0"+ sigundos;
+     }
+
+
+
+    let total=hora+":"+minutos+":"+sigundos;
+    tee.innerHTML=`${total}`
+    }
+    let tempo = setInterval(relogioo,1000);
+
+    if(hora <=0  ||  hora <= 6 ){
+        caio.innerHTML=`<style>
+                             body
+                             {
+                                background: #000000;
+                            }
+                            .anbiente{
+                                background:  url(https://images.pexels.com/photos/1252869/pexels-photo-1252869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+                                background-size: cover;
+                            }
+                             </style>BOA MADRUGA `
+
+    } else if( hora <=7 || hora <=12){
+        caio.innerHTML=`<style>
+                             body
+                             {
+                                background: #F6C667;
+                            }
+                            .anbiente{
+                                background:  url(https://images.pexels.com/photos/1454769/pexels-photo-1454769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+                                background-size: cover;
+                            }
+                             </style>BOA DIA `
+
+    }else if(hora <=13 || hora <=18 ){
+        caio.innerHTML=`<style>
+                             body
+                             {
+                                background: #64DFDF;
+                            }
+                            .anbiente{
+                                background:  url(https://images.pexels.com/photos/1420440/pexels-photo-1420440.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+                                background-size: cover;
+                            }
+                             </style>BOA TARDE`
+    }else if(hora <=19 || hora <= 23){
+        caio.innerHTML=`<style> body
+                             {
+                                background: #29252C;
+                                }
+                                .anbiente{
+                                background:  url(https://images.pexels.com/photos/1252869/pexels-photo-1252869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+                                 background-size: cover;}
+                             </style> BOA NOITE`
+
+    }
 
 /*conteudo da edução(HISTORIA)*/
 }else if(t ==='descobrimento do brasil' || t ==='Descobrimento do Brasil' || t ==='Descobrimento do brasil'){

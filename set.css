@@ -15,25 +15,25 @@
    justify-content: center;
    height: 100vh;
    width: 100vh;
-   background:linear-gradient(45deg,#222831,#393e46,#00adb5);
+   background: #001;
+   /*background:linear-gradient(45deg,#222831,#393e46,#00adb5);
 background-size: 200%,200%;
-animation:colos 15s ease infinite ;
+animation:colos 15s ease infinite ;*/
 }
 .vamos
 {
 
-    width: 50ch;
-    height: auto;
+    max-width: 30ch;
+    min-width:30ch ;
     min-height: 20ch;
     top: 5%;
-    left: 30%;
+    left: 60ch;
     position: absolute;
     color: #fff;
     margin-top: 30ch;
     transform: translate(-50%,-50%);
     background: #191919;
-    text-align: center;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 
@@ -45,10 +45,63 @@ animation:colos 15s ease infinite ;
    border: solid 1px ;
     
 }
+.morgana{
+    display: flex;
+    background: #fff;
+    color: #001;
+    width: 100%;
+}
+.morgana p{
+    position: relative;
+    margin-top: 1.5ch;
+    margin-left: 1ch;
+    
+}
+.seta{
+    
+    width: 20px;
+    height: 20px;
+}
+.morgana img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+.ca{
+
+    position: relative;
+    width: 25ch;
+    margin-top: 2ch;
+    background: rgb(228, 212, 212);
+    border-radius: 5px;
+    color: #000;
+}
 .pergunta{
 color: #fff;
 position: relative;
-top: 90%;
+margin-left:2ch;
+ margin-top: 40ch;
+}
+.perguntar button{
+    position: relative;
+    margin-left: 2ch;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.pergunta img{
+    width: 40px;
+    height: 40px;
+    border:none;
+    border-radius: 50%;
+}
+.pergunta input{
+    position: relative;
+    top: -2ch;
+    height: 5ch;
+    border-radius: 10px;
+   
 }
 
 
@@ -244,46 +297,22 @@ animation-iteration-count:infinite;
 @media (max-width:1000px)
 {
     .vamos{
+        margin-left:8ch;
         
-        top: 10%;
-        left: 1%;
-        width: 90%;
-    height: 80%;
+       
+     
     }
     .loader
 {
-    left: 85%;
-    top:10%;
-    position: relative;
-    width:50px;
-    height:50px;
-    border-radius: 100%;
+     left: 85%;
+     top:10%;
+     position: relative;
+     width:50px;
+     height:50px;
+     border-radius: 100%;
     
 }
-.ca
-{
-    background:linear-gradient(45deg,#560764,#913175,#dd5b82,#fe9797);
-    position: absolute;
-  
- 
-    width: 85%;
-    top: 95px;
-    left: 0%;
-    background-size: 300%,300%;
-    animation:colos 15s ease infinite ;
-}
-.te
-{
-    display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 100%;
-   width: 100%;
-   background:linear-gradient(45deg,#222831,#393e46,#00adb5);
-background-size: 200%,200%;
-animation:colos 15s ease infinite ;
 
 
-}
 }
    
