@@ -23,7 +23,7 @@ animation:colos 15s ease infinite ;*/
 .vamos
 {
 
-    max-width: 30ch;
+    
     min-width:30ch ;
     min-height: 20ch;
     top: 5%;
@@ -297,8 +297,13 @@ animation-iteration-count:infinite;
 @media (max-width:1000px)
 {
     .vamos{
-        top:30%;
-        left:45ch;
+        left:20ch;
+        width:50%;
+        
+       
+        
+       
+        
         
        
      
