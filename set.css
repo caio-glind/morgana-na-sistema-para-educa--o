@@ -297,9 +297,10 @@ animation-iteration-count:infinite;
 @media (max-width:1000px)
 {
     .vamos{
-        left:20ch;
-        width:50%;
-        
+        top: -1ch;
+        left:23ch;
+        width:40ch;
+
        
         
        

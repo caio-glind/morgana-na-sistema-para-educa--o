@@ -5,7 +5,7 @@ function resposta(){
 if(t=== 'oi' || t=== 'Oi' || t=== 'ola' || t=== 'Ola' ){
 ca.innerHTML=`oi ;)`
 
-}else if(t==='Tudo bem?' ||t==='tudo bem?' || t==='tudo bem' ||t==='ta tudo bem' || t==='Ta tudo bem' || t==="tudo bem com você ?" || t==="tudo bem ?"){
+}else if(t==='Tudo bem?' ||t==='Tudo bem?' ||t==='tudo bem?' || t==='tudo bem' ||t==='ta tudo bem' || t==='Ta tudo bem' || t==="tudo bem com você ?" || t==="tudo bem ?"){
     ca.innerHTML=`sim,estou muito bem obrigado por perguntar :)`
 }else if(t==='como você esta?' || t==='Como você esta?' || t==='como você esta ?' || t==='como você ta ?' || t==='como você ta'){
     ca.innerHTML="Estou otima obrigada :)"
